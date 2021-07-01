@@ -258,7 +258,7 @@ PRODUCT_PACKAGES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service
+    android.hardware.power-service.xiaomi-libperfmgr
 
 # QTI FWK Detect
 PRODUCT_PACKAGES += \
@@ -309,7 +309,9 @@ PRODUCT_PACKAGES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
-    kernel/realme/sm7125
+    hardware/google/interfaces \
+    hardware/google/pixel \
+    hardware/xiaomi
 
 # Telephony
 PRODUCT_PACKAGES += \
