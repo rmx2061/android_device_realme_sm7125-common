@@ -540,17 +540,6 @@
 
     <!-- Whether device has VOOC charging support -->
     <bool name="config_hasVoocCharger">true</bool>
-  
-    <!-- The default refresh rate. Razer Phone manages this using the peak refresh rate setting, so set
-         this value to 0 so it has no effect. -->
-    <integer name="config_defaultRefreshRate">90</integer>
-
-    <!-- The default peak refresh rate. -->
-    <integer name="config_defaultPeakRefreshRate">90</integer>
-
-    <!-- The default minimum refresh rate for a given device. Devices with higher refresh rates
-         may want to configure this to avoid jank during refresh rate switching -->
-    <integer name="config_defaultMinimumRefreshRate">60</integer>
 
     <!-- Whether device has screen with higher aspect ratio -->
     <bool name="config_haveHigherAspectRatioScreen">true</bool>
