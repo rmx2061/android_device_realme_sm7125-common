@@ -135,6 +135,7 @@ vendor.display.qdcm.mode_combine=1
 persist.sys.sf.color_saturation=1.0
 persist.sys.sf.native_mode=2
 persist.sys.sf.color_mode=9
+debug.sdm.support_writeback=0
 
 # FM
 vendor.hw.fm.init=0
