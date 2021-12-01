@@ -5,7 +5,6 @@ ro.qc.sdk.audio.fluencetype=none
 persist.audio.fluence.voicecall=true
 persist.audio.fluence.voicerec=false
 persist.audio.fluence.speaker=true
-
 # Bluetooth
 vendor.bluetooth.soc=cherokee
 persist.vendor.bt.a2dp.aac_whitelist=false 
@@ -28,32 +27,30 @@ persist.vendor.service.bdroid.soc.alwayson=true
 persist.vendor.service.bt.iotinfo.report.enable=true 
 persist.vendor.btstack.aac_frm_ctl.enabled=true
 persist.bluetooth.sbc_hd_higher_bitrate=1
-
 # CNE
 persist.vendor.cne.feature=1
-
+# Color Management
+ro.surface_flinger.use_color_management=false
+ro.surface_flinger.has_HDR_display=false
+ro.surface_flinger.has_wide_color_display=false
 # Dalvik
 dalvik.vm.dexopt.secondary=true
-
+# Disable vsync for cpu rendered apps
+debug.cpurend.vsync=false
 # DPM
 persist.dpm.feature=1
-
 # GBoard
 ro.com.google.ime.kb_pad_port_l=6
 ro.com.google.ime.kb_pad_port_r=6
 ro.com.google.ime.kb_pad_land_l=12
 ro.com.google.ime.kb_pad_land_r=12
-ro.com.google.ime.corner_key_r=30
-
 # Goodix FP
 ro.boot.flash.fucked=0
 vendor.fingerprint.cali=1
-
 # IMS
 persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=1
 persist.dbg.wfc_avail_ovr=1
-
 # Media
 debug.stagefright.ccodec=1
 media.settings.xml=/vendor/etc/media_profiles_vendor.xml
@@ -66,18 +63,14 @@ media.stagefright.enable-scan=true
 media.stagefright.thumbnail.prefer_hw_codecs=true
 ro.media.recorder-max-base-layer-fps=60
 vendor.mm.enable.qcom_parser=131071983
-
 # Netflix
 ro.netflix.bsp_rev=Q6250-19132-1
-
 # NFC
 persist.nfc.smartcard.recorder.enable=true
 ro.nfc.port=I2C
-
 # Perf
 ro.vendor.qti.sys.fw.bservice_enable=true
-
-# Radio
+#Radio
 DEVICE_PROVISIONED=1
 persist.data.df.dev_name=rmnet_usb0
 persist.sys.log.radio=20|10
@@ -96,15 +89,14 @@ ril.subscription.types=NV,RUIM
 ro.telephony.default_network=22,22
 ro.vendor.use_data_netmgrd=true
 telephony.lteOnCdmaDevice=1
-
+persist.sys.fflag.override.settings_network_and_internet_v2=true
+persist.sys.fflag.override.settings_provider_model=false
 # SSR
 persist.vendor.ssr.restart_level=ALL_ENABLE
-
 # WFD
 persist.debug.wfd.enable=1
 persist.sys.wfd.virtual=0
-
 # ZRAM
 ro.zram.mark_idle_delay_mins=60
-ro.zram.first_wb_delay_mins=180
+ro.zram.first_wb_delay_mins=1440
 ro.zram.periodic_wb_delay_hours=24
