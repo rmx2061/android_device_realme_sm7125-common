@@ -8,6 +8,20 @@ vendor.display.disable_rotator_ubwc=1
 vendor.display.disable_hw_recovery_dump=1
 vendor.display.disable_rotator_downscale=1
 
+# Memory Tweaks 
+dalvik.vm.checkjni=false 
+dalvik.vm.dexopt-data-only=1 
+dalvik.vm.verify-bytecode=false 
+dalvik.vm.execution-mode=int:jit 
+dalvik.vm.lockprof.threshold=0 
+dalvik.vm.dexopt-flags=m=v,o=y 
+dalvik.vm.stack-trace-file=/data/anr/traces.txt 
+dalvik.vm.jmiopts=forcecopy 
+ro.vendor.qti.sys.fw.bg_apps_limit=20 
+persist.sys.shutdown.mode=hibernate 
+persist.service.pcsync.enable=0 
+persist.service.lgospd.enable=0
+
 # LMKD
 ro.config.low_ram=false
 
@@ -15,6 +29,4 @@ ro.config.low_ram=false
 ro.incremental.enable=1
 
 # IORap
-ro.iorapd.enable=true
-iorapd.perfetto.enable=true
-iorapd.readahead.enable=true
+persist.device_config.runtime_native_boot.iorap_readahead_enable=true
