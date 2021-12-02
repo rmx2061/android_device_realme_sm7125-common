@@ -44,6 +44,7 @@ ro.com.google.ime.kb_pad_port_l=6
 ro.com.google.ime.kb_pad_port_r=6
 ro.com.google.ime.kb_pad_land_l=12
 ro.com.google.ime.kb_pad_land_r=12
+ro.com.google.ime.corner_key_r=30
 # Goodix FP
 ro.boot.flash.fucked=0
 vendor.fingerprint.cali=1
